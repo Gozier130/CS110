@@ -1,1 +1,1 @@
-# This is the repository for the lesson CS110!
+# This is the repository for the course CS110!
