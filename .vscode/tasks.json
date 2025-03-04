@@ -1,0 +1,25 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build with GCC",
+            "type": "shell",
+            "command": "gcc",
+            "args": [
+                "-Wpedantic", 
+                "-Wall", 
+                "-Wextra", 
+                "-Wvla", 
+                "-Werror", 
+                "-std=c11",
+                "-o", "${workspaceFolder}/output",
+                "${workspaceFolder}/*.c"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$gcc"]
+        }
+    ]
+}
